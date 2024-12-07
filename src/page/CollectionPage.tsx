@@ -6,17 +6,17 @@ export default function CollectionPage() {
   const [socket, setSocket] = useState<Socket>();
   const navigate = useNavigate();
   useEffect(() => {
-    const newSocket = io("https://socket-server-dzcu.onrender.com", {
+    const newSocket = io("https://socket-server-lovat.vercel.app", {
       withCredentials: true,
-      extraHeaders: {
-        "my-custom-header": "abcd",
-      },
+      // extraHeaders: {
+      //   "my-custom-header": "abcd",
+      // },
     });
     setSocket(newSocket);
 
-    return () => {
-      newSocket.disconnect();
-    };
+    // return () => {
+    //   newSocket.disconnect();
+    // };
   }, []);
   useEffect(() => {
     if (!socket) return;
