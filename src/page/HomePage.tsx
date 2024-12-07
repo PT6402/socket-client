@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function HomePage() {
   const navigate = useNavigate();
   const handleSend = () => {
-    axios.get("https://socket-server-gamma.vercel.app/send");
+    axios.get("https://socket-server-dzcu.onrender.com/send");
   };
   return (
     <>

@@ -6,7 +6,7 @@ export default function CollectionPage() {
   const [socket, setSocket] = useState<Socket>();
   const navigate = useNavigate();
   useEffect(() => {
-    const newSocket = io("https://socket-server-gamma.vercel.app", {
+    const newSocket = io("https://socket-server-dzcu.onrender.com", {
       withCredentials: true,
       extraHeaders: {
         "my-custom-header": "abcd",
