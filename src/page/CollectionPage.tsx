@@ -6,7 +6,7 @@ export default function CollectionPage() {
   const [socket, setSocket] = useState<Socket>();
   const navigate = useNavigate();
   useEffect(() => {
-    const newSocket = io("http://localhost:8080");
+    const newSocket = io("https://socket-server-gamma.vercel.app");
     setSocket(newSocket);
 
     return () => {
