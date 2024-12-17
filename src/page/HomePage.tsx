@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function HomePage() {
   const navigate = useNavigate();
   const handleSend = () => {
-    axios.get("http://localhost:8080/send").then(() => {
+    axios.get("https://socket-server-mur9.onrender.com/send").then(() => {
       navigate("/collection");
     });
   };
